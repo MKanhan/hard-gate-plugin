@@ -1,23 +1,29 @@
 {
   "$schema": "https://code.claude.com/schemas/marketplace.json",
-  "name": "november24",
+  "name": "hard-gate",
   "owner": {
     "name": "Marcelo Kanhan"
   },
-  "description": "november24 — mentoria individual de Estratégia de IA e Negócios. O plugin traz o método para o Claude.",
+  "description": "Hard Gate: capacitação de Estratégia de IA e Negócios. O plugin traz o método C1–C10 para o seu Claude.",
   "plugins": [
     {
-      "name": "november24",
+      "name": "hard-gate",
       "source": "./",
-      "description": "O método da mentoria november24 no seu Claude: respostas curtas e socráticas a partir do material dos dez temas de estratégia de IA, com o conector da mentoria e o visor da marca.",
+      "description": "O método C1–C10 da Hard Gate no seu Claude: respostas curtas e socráticas a partir do material dos dez temas de estratégia de IA, com o conector e o visor da marca.",
       "author": {
         "name": "Marcelo Kanhan"
       },
-      "homepage": "https://november24.com.br",
-      "repository": "https://github.com/MKanhan/november24-plugin",
+      "homepage": "https://hardgate.com.br/capacitacao/",
+      "repository": "https://github.com/MKanhan/hard-gate-plugin",
       "license": "MIT",
-      "keywords": ["mentoria", "estrategia", "ia", "november24"],
-      "category": "productivity"
+      "keywords": [
+        "capacitacao",
+        "estrategia",
+        "ia",
+        "hard-gate"
+      ],
+      "category": "productivity",
+      "version": "0.3.0"
     }
   ]
 }

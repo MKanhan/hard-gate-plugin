@@ -1,10 +1,10 @@
 {
-  "name": "november24-plugin",
+  "name": "hard-gate-plugin",
   "private": true,
   "type": "module",
   "scripts": {
     "test": "node --test test/*.test.mjs",
     "validate": "claude plugin validate .",
-    "zip": "cd .. && rm -f november24-plugin.zip && zip -qr november24-plugin.zip plugin -x 'plugin/.git/*' 'plugin/node_modules/*' 'plugin/evals/results/*'"
+    "zip": "cd .. && rm -f hard-gate-plugin.zip && zip -qr hard-gate-plugin.zip plugin -x 'plugin/.git/*' 'plugin/node_modules/*' 'plugin/evals/results/*'"
   }
 }

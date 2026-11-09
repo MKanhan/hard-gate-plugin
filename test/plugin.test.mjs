@@ -15,18 +15,18 @@ const front = (p) => {
 test("manifesto, marketplace e conector: nome fixo, mesma versão, URL do conector sem barra final", () => {
   const p = json(".claude-plugin/plugin.json");
   const m = json(".claude-plugin/marketplace.json");
-  assert.equal(p.name, "november24");
+  assert.equal(p.name, "hard-gate");
   assert.equal(m.plugins[0].name, p.name);
   assert.equal(m.plugins[0].description, p.description);
   assert.ok(p.license && p.version);
-  const c = json(".mcp.json").mcpServers.november24;
+  const c = json(".mcp.json").mcpServers["hard-gate"];
   assert.equal(c.type, "http");
-  assert.equal(c.url, "https://mcp.november24.com.br/mcp");
+  assert.equal(c.url, "https://mcp.hardgate.com.br/mcp");
 });
 
 test("skills: pasta = name; description até 1024 caracteres, com as palavras que a aluna usaria", () => {
   const skills = readdirSync(join(RAIZ, "skills"));
-  assert.deepEqual(skills.sort(), ["mentoria-socratica", "visor-november24"]);
+  assert.deepEqual(skills.sort(), ["mentoria-socratica", "visor-hard-gate"]);
   for (const s of skills) {
     const f = front(join(RAIZ, "skills", s, "SKILL.md"));
     assert.equal(f.name, s);
@@ -34,7 +34,7 @@ test("skills: pasta = name; description até 1024 caracteres, com as palavras qu
   }
   const m = front(join(RAIZ, "skills", "mentoria-socratica", "SKILL.md")).description;
   for (const w of ["resumo", "plano", "governança", "piloto", "outra pessoa", "C5"]) assert.match(m, new RegExp(w));
-  const v = front(join(RAIZ, "skills", "visor-november24", "SKILL.md")).description;
+  const v = front(join(RAIZ, "skills", "visor-hard-gate", "SKILL.md")).description;
   for (const w of ["visor", "tabela", "checklist", "`mostrar`"]) assert.match(v, new RegExp(w.replace(/[`]/g, "\\`")));
 });
 
@@ -43,7 +43,7 @@ test("a skill entrega no primeiro turno e não pede esqueleto prévio; o visor m
   assert.match(m, /Entregue já no primeiro turno/);
   assert.match(m, /Uma só pergunta no fim/);
   assert.doesNotMatch(m, /primeiro (me )?mostre o esqueleto/);
-  const v = readFileSync(join(RAIZ, "skills", "visor-november24", "SKILL.md"), "utf8");
+  const v = readFileSync(join(RAIZ, "skills", "visor-hard-gate", "SKILL.md"), "utf8");
   assert.match(v, /Chame `mostrar` no mesmo turno/);
   assert.match(v, /Nunca crie widget, artefato, HTML ou canvas próprio/);
 });

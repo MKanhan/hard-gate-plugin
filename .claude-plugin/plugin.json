@@ -1,14 +1,19 @@
 {
-  "name": "november24",
-  "displayName": "november24 · mentoria",
-  "version": "0.2.1",
-  "description": "O método da mentoria november24 no seu Claude: respostas curtas e socráticas a partir do material dos dez temas de estratégia de IA, com o conector da mentoria e o visor da marca.",
+  "name": "hard-gate",
+  "displayName": "Hard Gate · capacitação",
+  "version": "0.3.0",
+  "description": "O método C1–C10 da Hard Gate no seu Claude: respostas curtas e socráticas a partir do material dos dez temas de estratégia de IA, com o conector e o visor da marca.",
   "author": {
     "name": "Marcelo Kanhan",
-    "url": "https://november24.com.br"
+    "url": "https://hardgate.com.br"
   },
-  "homepage": "https://november24.com.br",
-  "repository": "https://github.com/MKanhan/november24-plugin",
+  "homepage": "https://hardgate.com.br/capacitacao/",
+  "repository": "https://github.com/MKanhan/hard-gate-plugin",
   "license": "MIT",
-  "keywords": ["mentoria", "estrategia", "ia", "november24"]
+  "keywords": [
+    "capacitacao",
+    "estrategia",
+    "ia",
+    "hard-gate"
+  ]
 }
